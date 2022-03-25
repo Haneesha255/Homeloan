@@ -1,0 +1,24 @@
+.container { 
+    height: 600px;
+    position: relative;
+    border: 3px solid green; 
+  }
+  .container1 { 
+    height: 350px;
+    width: 80%;
+    background-color: powderblue;
+    position: relative;
+    left: 125px;
+    border: 2px solid green; 
+  }
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

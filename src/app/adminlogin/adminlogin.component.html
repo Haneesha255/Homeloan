@@ -1,0 +1,19 @@
+<div class="form">
+    <h2>Login Here</h2>
+    <form #loginForm="ngForm" (ngSubmit)="validateLogin(loginForm)">
+        <table>
+            <tr>
+                <td>Email ID</td><td> <input type="text" name="email" ngModel> </td>
+            </tr>
+            <tr>
+                <td>Password</td><td> <input type="password" name="password" ngModel> </td>
+            </tr>
+            
+            <tr>
+                <td><input type="reset" value="RESET"  class="btn btn-danger"></td>
+                <td> <input type="submit" value="LOGIN" class="btn btn-success"> </td>
+            </tr>
+        </table>
+    </form>
+    
+</div>

@@ -1,0 +1,48 @@
+<form #regiformForm="ngForm" (ngSubmit)="saveRegiform(regiformForm)" class="table table-success table-striped">
+
+    <table >
+         <tr >
+            <td>firstName</td><td> <input type="text" name="first_name" [(ngModel)]="regiform.firstName"> </td>
+        </tr>
+        <tr >
+            <td>middleName</td><td> <input type="text" name="middle_name" [(ngModel)]="regiform.middleName"> </td>
+        </tr>
+        <tr >
+            <td>lastName</td><td> <input type="text" name="last_name" [(ngModel)]="regiform.lastName"> </td>
+        </tr>
+        <tr >
+            <td>email</td><td> <input type="email" name="email" [(ngModel)]="regiform.email"> </td>
+        </tr>
+        <tr >
+            <td>password</td><td> <input type="password" name="password" [(ngModel)]="regiform.password"> </td>
+        </tr>
+        <tr >
+            <td>confirmPwd</td><td> <input type="password" name="confirmpassword" [(ngModel)]="regiform.confirmPwd"> </td>
+        </tr>
+        <tr >
+            <td>PhoneNo</td><td> <input type="number" name="phone_no" [(ngModel)]="regiform.phoneNo"> </td>
+        </tr>
+        <tr>
+            <td>dob</td><td><input type="date" name="dob" required pattern="\d{4}-\d{2}-\d{2}" [(ngModel)]="regiform.dob">
+            <span class="validity"></span></td>
+        </tr>
+        <tr>
+            <td>gender</td><td> <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female" [(ngModel)]="regiform.gender"> Female  </td>
+        </tr>
+        <tr >
+            <td>nationality</td><td> <input type="text" name="nationality" [(ngModel)]="regiform.nationality"> </td>
+        </tr>
+         <tr >
+            <td>aadharNo</td><td> <input type="number" name="aadhar_No" [(ngModel)]="regiform.aadharNo"> </td>
+        </tr>
+        <tr >
+            <td>panNo</td><td> <input type="text" name="pan_no" [(ngModel)]="regiform.panNo"> </td>
+        </tr>
+        
+        <tr >
+            <td><input type="reset" value="RESET" class="btn btn-dark"></td>
+            <td> <input type="submit" value="SUBMIT" class="btn btn-success"> </td>
+        </tr>
+    </table>
+</form>
+

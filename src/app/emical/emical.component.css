@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    }
+    .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    height: 400px; 
+    }
+    
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    .mydiv {
+    background-color: white;
+    width: 300px;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 10px;
+    }

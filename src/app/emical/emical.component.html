@@ -1,0 +1,25 @@
+<p><b>Home Loan Calculator</b></p>
+
+<div class="main">
+
+    <div class="card">	
+
+        <form>
+            <div class="container">
+                <label><b>Loan</b></label>
+                <input placeholder="Enter Loan" (keyup)="handleLoanEvent($event)"/><br>
+                
+                <label><b>Tenure</b></label>
+                <input  placeholder="Enter Tenure in years" (keyup)="handleTenureEvent($event)"><br>
+
+                <label><b>ROI</b></label>
+                <input  placeholder="Enter Tenure in years" (keyup)="handleRoiEvent($event)"><br>
+
+                <button (click)="cal()" type="submit">Calculate</button>
+            </div>
+                <h3 *ngIf="flag">Your EMI will be ₹{{emi1}} per month  </h3>
+                <h3 *ngIf="flag">Total Interest Payable ₹{{interest}}     </h3> 
+                <h3 *ngIf="flag">Total Payment (Principle + Interest): ₹{{totalAmt}}     </h3> 
+            
+        </form>
+     </div>

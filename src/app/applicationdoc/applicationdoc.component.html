@@ -1,0 +1,35 @@
+<form #regiformForm="ngForm" (ngSubmit)="saveform(regiformForm)" class="table"class="table table-success table-striped">
+    <table >
+        
+        <tr >
+            <td>Appid<td> <input type="text" name="appid" [(ngModel)]="regiform.appId"> </td>
+        </tr>
+        <tr >
+            <td>PropertyLocation</td><td> <input type="text" name="propertyloc" [(ngModel)]="regiform.propertyLoc"> </td>
+        </tr>
+        
+        <tr >
+            <td>PropertyName</td><td> <input type="text" name="propertyname" [(ngModel)]="regiform.propertyName"> </td>
+        </tr>
+        <tr >
+            <td>EstimatedAmount</td><td> <input type="text" name="estimatedamount" [(ngModel)]="regiform.propertyEstimatedAmount"> </td>
+        </tr>
+        <tr >
+            <td>TypeOfEmployee</td><td> <input type="text" name="typeofemployee" [(ngModel)]="regiform.typeOfEmployment"> </td>
+        </tr>
+
+        <tr >
+            <td>RetirementAge</td><td> <input type="text" name="retirementage" [(ngModel)]="regiform.retirementAge"> </td>
+        </tr>
+        <tr >
+            <td>Organizationtype</td><td> <input type="text" name="orgtype" [(ngModel)]="regiform.orgType"> </td>
+        </tr>
+        <tr >
+            <td>Income</td><td> <input type="number" name="income" [(ngModel)]="regiform.income" > </td>
+        </tr>
+        <tr >
+            <td><input type="reset" value="RESET" class="btn btn-dark"></td>
+            <td> <input type="submit" value="SUBMIT" class="btn btn-success"> </td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,16 @@
+<p><b>Calculate housing loan eligibility</b></p>
+
+<div class="main">
+
+    <div class="card">	
+
+        <form>
+            <div class="container">
+                <label><b>Monthly Income</b></label>
+                <input placeholder="Enter Montly Income" (keyup)="handleMonthlyIncomeEvent($event)"/>
+                
+                <button (click)="cal()" type="submit">Calculate</button>
+            </div>
+                <h3 *ngIf="flag"> You may be able to avail home loan up to ₹{{eligibility}}  </h3>
+        </form>
+     </div>
